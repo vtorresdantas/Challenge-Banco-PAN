@@ -46,10 +46,6 @@
 
 ![image](https://user-images.githubusercontent.com/62342894/163206275-ce6f51af-a344-437f-885c-c137cff63999.png)
 
-
-
-
-
 # Desafios
 
 - Como você modelaria o banco de dados para atender aos requisitos descritos acima?
@@ -58,3 +54,8 @@
 - Como você estruturaria os serviços para receber as inclusões e/ou alterações dos dados?
 - Como você estruturaria os serviços para receber as consultas dos dados?
 - Como você classifica a melhor informação do cliente?
+
+# Conheça nossa equipe
+
+![image](https://user-images.githubusercontent.com/62342894/163263272-021a6111-a204-4ba0-8d46-6d396be69cd3.png)
+
