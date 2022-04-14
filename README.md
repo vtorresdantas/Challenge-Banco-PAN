@@ -57,5 +57,6 @@
 
 # Conheça nossa equipe
 
-![image](https://user-images.githubusercontent.com/62342894/163263272-021a6111-a204-4ba0-8d46-6d396be69cd3.png)
+![image](https://user-images.githubusercontent.com/62342894/163401263-f8c7103d-4a66-4a07-bc2b-05a7fa6cc550.png)
+
 
