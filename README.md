@@ -2,6 +2,24 @@
 
 - Repositório centralizado de arquivos relacionados a *Challenge Sprint Banco PAN* para a turma de Sistemas de Informação 2SIR no 1° semestre
 
+# Descrição
+
+O Banco PAN traz o desafio da sua área de CRM (Customer Relationship Management) quanto a qualificação de dados cadastrais dos seus clientes.
+Hoje existem problemas de sincronização de dados de sistemas diversos que contém informações cadastrais dos clientes e produtos que operam.
+O Banco PAN deseja o desenvolvimento de uma solução que possibilite padronizar a captura de dados, complementação, padronização e qualificação dos dados para que o cadastro seja feito de forma correta e completa, criando harmonização de dados.
+A harmonização permitirá a consulta correta da situação operacional do cliente e a oferta de produtos e serviços direcionados à necessidades desse cliente.
+É de interesse do parceiro do challenge que sua equipe de desenvolvimento de projeto trabalhe uma solução envolvendo o desenho técnico e construção do
+software de aplicação, banco de dados e infraestrutura tecnológica para garantir alta disponibilidade, confiabilidade, integridade e desempenho nas transações que envolvem alimentação, modificação e consumo em consultas de dados cadastrais dos clientes do Banco PAN.
+A limpeza e complementação de dados que hoje estão comprometidos em qualidade também não é alvo inicial do desafio.
+
+## Detalhes do pedido feito pelo Banco PAN:
+
+*Desejamos remodelar nosso banco de dados de modo a passar a tratar o cliente de maneira única e centralizada. O nosso sistema tem como objetivo ser o
+repositório cadastral de clientes do Pan, centralizando a informação em um único sistema.*
+
+*Atualmente, nosso banco de dados está estruturado na visão de cliente por produto, de modo que a mesma pessoa apareça de maneira duplicada em uma
+visão cliente. Queremos sair de uma visão orientada ao produto, para uma visão orientada ao cliente:*
+
 # Objetivo
 
 - Apresentar o cenário atual do cadastro de clientes, onde os dados estão segregados por produtos.
@@ -30,6 +48,14 @@
 ![image](https://user-images.githubusercontent.com/62342894/163205705-685dde90-8db6-4f3d-bab7-3a50b88076a7.png)
 
 - Esta visão "produtizada" é aplicada e todos os dados do cliente
+
+É importante ressaltar que temos dados voláteis (celular, email, endereço, etc.) e dados não voláteis (nome, sexo, CPF, etc.), sendo que são esses dados não voláteis que caracterizam o conceito de Pessoa dentro nosso sistema.
+Uma pessoa contém CPF, nome, data de nascimento e sexo como atributos principais. As informações de contato (telefone, celular, email, etc.), endereço (rua, número, cidade, etc.) e produtos (cartões, consignado, imobiliário, etc.) são atributos desse cliente, mas que fornecem informações importantes para as áreas do banco.
+Importante ressaltar que os dados de contato e endereço também precisam estar presentes na visão do produto, pois há diretivas legais que nos fazem precisar ter essa informação.
+Os dados podem ser atualizados por vários produtos e chegam ao sistema de maneira online, porém assíncrona. No momento que a informação chega ao
+sistema, é preciso tomar a decisão sobre a qualidade da informação e sobre acatá-la ou não.
+A consulta dessas informações ocorre, de maneira síncrona e online, em momentos críticos de diversos fluxos de negócio, de modo que uma
+indisponibilidade dessas informações traz uma perda importante para a instituição. 
 
 # Visual atual do cliente
 
