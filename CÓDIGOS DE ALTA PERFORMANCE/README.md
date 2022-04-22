@@ -99,7 +99,7 @@ Serão analisados e avaliados:
 ## 5. Geração da lista de clientes (elementos da classe Cliente) contendo os clientes aptos para divulgação da oferta em ordem decrescente de saldo, fazendo uso do método elaborado no item anterior (1,0)
 ## 6. Apresentação da lista com os registros de clientes gerada no item anterior. (1,0)
 ## 7. Remoção do registro do cliente que aceitou a oferta do banco, mantendo organização da ABB (2,0)
-##8. Finalização do programa esvaziando ABB (1,0)
+## 8. Finalização do programa esvaziando ABB (1,0)
 
 O projeto JAVA deve ser zipado e entregue como um único documento. 
 
