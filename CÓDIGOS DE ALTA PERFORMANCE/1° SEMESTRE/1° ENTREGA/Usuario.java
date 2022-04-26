@@ -19,7 +19,7 @@ public class Usuario {
 	public void enviaMsg(String msg) {
 
 		System.out.println("Mensagem enviada com sucesso");
-		if (pilha.isEmpty()) {
+		if (pilha.isEmpty() || !pilha.isEmpty()) {
 			pilha.push(msg);
 		}
 
@@ -30,9 +30,17 @@ public class Usuario {
 
 	public void leMsg() {
 
-		System.out.println("Há Mensagens a serem lidas");
+		int indice = 2;
+
+		System.out.println("Há Mensagens a serem lidas: ");
 
 		System.out.println(pilha.pop());
+
+		if (pilha.isEmpty() == true) {
+			System.out.println("Status = ok");
+		} else {
+			System.out.println("Status = não ok");
+		}
 
 	}
 

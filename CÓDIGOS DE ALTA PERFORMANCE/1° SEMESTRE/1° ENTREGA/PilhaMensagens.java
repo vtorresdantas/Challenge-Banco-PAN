@@ -44,4 +44,15 @@ public class PilhaMensagens {
 		return (dados[topo]);
 	}
 
+	public void retorno() {
+
+		String[] mensagens = new String[N];
+
+		for (int i = 0; i < N; i++) {
+			dados[i] = mensagens[i];
+			System.out.println(mensagens[i]);
+		}
+
+	}
+
 }
