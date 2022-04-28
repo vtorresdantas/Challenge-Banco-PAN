@@ -1,10 +1,11 @@
-package ChallegeSprint01;
+package ChallengeSprint01;
 
 public class Usuario {
 
 	protected int id;
 	protected String nome;
 	PilhaMensagens pilha = new PilhaMensagens();
+	int contador;
 
 	// construtor para inicializar os atributos
 	public Usuario(int id, String nome) {
@@ -21,6 +22,7 @@ public class Usuario {
 		System.out.println("Mensagem enviada com sucesso");
 		if (pilha.isEmpty() || !pilha.isEmpty()) {
 			pilha.push(msg);
+			contador++;
 		}
 
 	}
@@ -30,16 +32,10 @@ public class Usuario {
 
 	public void leMsg() {
 
-		int indice = 2;
-
 		System.out.println("Há Mensagens a serem lidas: ");
 
-		System.out.println(pilha.pop());
-
-		if (pilha.isEmpty() == true) {
-			System.out.println("Status = ok");
-		} else {
-			System.out.println("Status = não ok");
+		for (int i = 0; i < contador; i++) {
+			System.out.println(pilha.pop());
 		}
 
 	}

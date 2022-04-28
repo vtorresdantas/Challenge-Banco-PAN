@@ -1,4 +1,4 @@
-package ChallegeSprint01;
+package ChallengeSprint01;
 
 import java.util.Scanner;
 
@@ -44,6 +44,7 @@ public class SAC {
 					cliente.leMsg();
 				else
 					System.out.println("Não há mensagens a serem lidas");
+				System.out.println("Status: " + cliente.getStatus());
 				break;
 			default:
 				System.out.println("Opção inválida!");

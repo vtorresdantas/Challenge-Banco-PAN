@@ -1,4 +1,4 @@
-package ChallegeSprint01;
+package ChallengeSprint01;
 
 public class PilhaMensagens {
 
